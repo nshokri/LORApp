@@ -1,18 +1,19 @@
 .icon-bar {
-  margin: 0px;
   width: 100%;
-  background-color: rgb(231, 224, 224);
+  background-color: rgb(51, 50, 48);
   overflow: auto;
 }
 
 .icon-bar a {
+  text-decoration: none;
+  font: 100px/1.5 "Script MT Bold", Helvetica, sans-serif;
   float: left;
-  width: 20%;
+  width: fit-content;
   text-align: center;
-  padding: 12px;
+  padding: 1.5% 2.5% 1.5% 2.5%;
   transition: all 0.3s ease;
-  color: rgb(179, 108, 108);
-  font-size: 36px;
+  color: rgba(212, 150, 5, 0.918);
+  font-size: 200%;
 }
 
 .icon-bar a:hover {
@@ -30,6 +31,8 @@ h1 {
 
 body {
   background: rgb(37, 36, 36);
+  margin: 0;
+  padding: 0;
 }
 
 section {
