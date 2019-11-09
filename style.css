@@ -1,0 +1,22 @@
+h1 {
+  font: 100px/1.5 "Script MT Bold", Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 5%;
+  display: block;
+  color: rgba(212, 150, 5, 0.918);
+}
+
+body {
+  background: rgb(37, 36, 36);
+}
+
+section {
+  text-align: center;
+}
+/*This might create problems btw*/
+/*.Center {
+  margin: 0 auto;
+  width: inherit;
+}
+*/
