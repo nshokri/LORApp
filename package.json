@@ -1,0 +1,22 @@
+{
+  "name": "lorapp",
+  "version": "1.0.0",
+  "description": "This is a legends of runeterra web app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danpoll/LORApp.git"
+  },
+  "keywords": [
+    "runeterra"
+  ],
+  "author": "Nick Shokri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danpoll/LORApp/issues"
+  },
+  "homepage": "https://github.com/danpoll/LORApp#readme"
+}
