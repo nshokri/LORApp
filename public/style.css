@@ -11,7 +11,7 @@
   width: fit-content;
   text-align: center;
   padding: 1.5% 2.5% 1.5% 2.5%;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   color: rgba(212, 150, 5, 0.918);
 }
 
@@ -20,10 +20,10 @@
 }
 
 h1 {
-  font: 100px/1.5 "Script MT Bold", Helvetica, sans-serif;
+  font: 1000% "Script MT Bold", Helvetica, sans-serif;
   padding: 0px;
   margin: 0px;
-  margin-top: 5%;
+  margin-top: 4.5%;
   display: block;
   color: rgba(212, 150, 5, 0.918);
 }
@@ -35,15 +35,33 @@ body {
 }
 
 section {
+  display: block;
   text-align: center;
 }
 
-#textbox {
+form.search {
+  display: inline-block;
+  padding: 50px;
+}
+
+form.search input[type=text] {
+  float: left;
   height: 80px;
   font: 25px Helvetica, Arial;
-  font-size: larger;
+  font-size: 30px;
   padding: 0px 10px 0px 10px;
   border: none;
 }
 
+form.search button {
+  font-size: 30px;
+  float: left;
+  background-color: rgba(212, 150, 5, 0.918);
+  margin: 0px 5px 0px 5px;
+  border: none;
+  transition: all 0.1s linear;
+}
 
+form.search button:hover {
+  background-color: rgba(243, 182, 39, 0.918);
+}
