@@ -6,14 +6,13 @@
 
 .icon-bar a {
   text-decoration: none;
-  font: 100px/1.5 "Script MT Bold", Helvetica, sans-serif;
+  font: 200% "Script MT Bold", Helvetica, sans-serif;
   float: left;
   width: fit-content;
   text-align: center;
   padding: 1.5% 2.5% 1.5% 2.5%;
   transition: all 0.3s ease;
   color: rgba(212, 150, 5, 0.918);
-  font-size: 200%;
 }
 
 .icon-bar a:hover {
@@ -38,13 +37,9 @@ body {
 section {
   text-align: center;
 }
-.textBox {
-  background-color: white;
-  padding: 30px 90% 30px 10%;
+
+#textbox {
+  height: 200px;
 }
-/*This might create problems btw*/
-/*.Center {
-  margin: 0 auto;
-  width: inherit;
-}
-*/
+
+
