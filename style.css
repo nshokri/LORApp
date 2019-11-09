@@ -1,3 +1,24 @@
+.icon-bar {
+  margin: 0px;
+  width: 100%;
+  background-color: rgb(231, 224, 224);
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px;
+  transition: all 0.3s ease;
+  color: rgb(179, 108, 108);
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: black;
+}
+
 h1 {
   font: 100px/1.5 "Script MT Bold", Helvetica, sans-serif;
   padding: 0px;
@@ -13,6 +34,10 @@ body {
 
 section {
   text-align: center;
+}
+.textBox {
+  background-color: white;
+  padding: 30px 90% 30px 10%;
 }
 /*This might create problems btw*/
 /*.Center {
