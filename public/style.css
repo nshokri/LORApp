@@ -39,7 +39,11 @@ section {
 }
 
 #textbox {
-  height: 200px;
+  height: 80px;
+  font: 25px Helvetica, Arial;
+  font-size: larger;
+  padding: 0px 10px 0px 10px;
+  border: none;
 }
 
 
