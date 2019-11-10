@@ -14,7 +14,7 @@
 
   <script>
 
-    var x = "test";
+    var x = "test123";
     const data = { x };
     const options = {
       method: 'POST',
@@ -25,9 +25,9 @@
     };
     const response = fetch('/api', options);
 
-    console.log(JSON(response));
+    console.log(response.json());
 
-    document.getElementById("para1").innerHTML = JSON.parse(json).para1;
+  //  document.getElementById("para1").innerHTML = JSON.parse(json).para1;
 
   </script>
 
