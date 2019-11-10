@@ -14,22 +14,25 @@
 
   <script>
 
-    var x = "test123";
-    const data = { x };
-    const options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    };
-    const response = fetch('/api', options);
+    async function loadPage()
+    {
+      const data = { };
+      const options = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      };
+      const response = await fetch('/loadPage', options);
+      const json = await response.json();
 
-    console.log(response.json());
+      document.getElementById("para1").innerHTML = json.para1;
+    }
 
-  //  document.getElementById("para1").innerHTML = JSON.parse(json).para1;
+    //function calls
+    loadPage();
 
   </script>
-
 
 </html>

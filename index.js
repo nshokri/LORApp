@@ -16,8 +16,10 @@ app.get("/summoner/:id", (request, response) => {
   response.sendFile(path.join(__dirname + "/summoner.html"));
 });
 
-app.post("/api", (request, response) => {
-  console.log("YOOO IM IN");
-  response.json(request.body);
-  //response.send({ status: "success!"});
+app.post("/loadPage", (request, response) => {
+
+  response.json({
+    status: "success",
+    para1: "POGGERS IT WORKS!!!"
+  });
 });
