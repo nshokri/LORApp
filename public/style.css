@@ -39,12 +39,11 @@ section {
   text-align: center;
 }
 
-form.search {
-  display: inline-block;
-  padding: 50px;
+.search {
+  display: auto;
 }
 
-form.search input[type=text] {
+.search input[type=text] {
   float: left;
   height: 80px;
   font: 25px Helvetica, Arial;
@@ -53,7 +52,7 @@ form.search input[type=text] {
   border: none;
 }
 
-form.search button {
+.search button {
   font-size: 30px;
   float: left;
   background-color: rgba(212, 150, 5, 0.918);
@@ -61,7 +60,6 @@ form.search button {
   border: none;
   transition: all 0.1s linear;
 }
-
-form.search button:hover {
+.search button:hover {
   background-color: rgba(243, 182, 39, 0.918);
 }
