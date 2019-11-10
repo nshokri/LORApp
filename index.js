@@ -18,8 +18,5 @@ app.get("/summoner/:id", (request, response) => {
 
 app.post("/api", (request, response) => {
   console.log("YOOO IM IN");
-  response.json({
-    para1: user,
-    status: 'success'
-  });
+  response.json(request.body);
 });
