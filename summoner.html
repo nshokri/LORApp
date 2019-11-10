@@ -25,8 +25,8 @@
     };
     const response = fetch('/api', options);
 
-    console.log(response.json());
-    
+    console.log(JSON(response));
+
     document.getElementById("para1").innerHTML = JSON.parse(json).para1;
 
   </script>

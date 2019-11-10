@@ -6,10 +6,10 @@ var user;
 
 app.listen(3000, () => console.log("listening at port 3000"));
 app.use(express.static("public"));
-app.use(express.json({ limit: "1mb" }));
+app.use(express.json());
+//{ limit: "1mb" }
 
 app.get("/summoner/:id", (request, response) => {
-  //console.log(request.body);
   console.log(request.params.id);
   user = request.params.id;
 
@@ -18,5 +18,5 @@ app.get("/summoner/:id", (request, response) => {
 
 app.post("/api", (request, response) => {
   console.log("YOOO IM IN");
-  response.json(request.body);
+  response.send({ status: "success!"});
 });
