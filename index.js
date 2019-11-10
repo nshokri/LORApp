@@ -7,9 +7,5 @@ app.use(express.static("public"));
 app.use(express.json());
 //{ limit: "1mb" }
 app.get("/api", (request, response) => {
-  console.log(request.body);
-  response.json({
-    status: "success"
-
-  });
+  console.log(request);
 });
