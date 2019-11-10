@@ -16,10 +16,10 @@
   <body>
     <section>
       <h1><b>LOR.gg<b></h1>
-        <div class="search">
-          <input type="text" onsubmit="sendInfo()" name="search" id="textbox" value="asd" size="40px" placeholder="Name">
-          <button type="submit" onclick="sendInfo()"><img src=search-icon.png style="width:71px" style="height:71px"></img></button>
-        </div>
+      <form class="search" onsubmit="sendInfo()">
+        <input type="text" name="search" id="textbox" size="40px" placeholder="Name">
+        <button type="submit"><img src=search-icon.png style="width:71px" style="height:71px"></img></button>
+      </form>
     </section>
   </body>
 
@@ -27,18 +27,16 @@
     function sendInfo()
     {
       console.log(document.getElementById("textbox").value);
+      const data = document.getElementById("textbox").value;
+      const options = {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      };
+      fetch('/api', options);
     }
-
-    const data = "XD";
-    const options = {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-    };
-    fetch('/api', options);
-
   </script>
 
 </html>
