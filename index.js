@@ -19,6 +19,6 @@ app.get("/summoner/:id", (request, response) => {
 app.post("/loadInfo", (request, response) => {
 
   response.json({
-    para1: user,
+    para1: user
   });
 });
