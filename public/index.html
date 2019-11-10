@@ -31,18 +31,16 @@
 
       const data = document.getElementById("textbox").value;
       const options = {
-        method: 'GET',
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
       };
-      fetch('/api', options).then(response => {
-        console.log(response);
-      });
+      fetch('/api', options);
     }
 
-    document.location.href = "PlayerPage.html";
+    //document.location.href = "PlayerPage.html";
   </script>
 
 </html>
