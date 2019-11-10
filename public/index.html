@@ -25,11 +25,12 @@
 
   <script>
     var form = document.getElementById("search");
-    form.onsubmit = function(e) {
+    form.onsubmit = async function(e) {
       e.preventDefault();
       console.log(document.getElementById("textbox").value);
 
-      const data = document.getElementById("textbox").value;
+      var x = document.getElementById("textbox").value;
+      const data = { x };
       const options = {
         method: 'POST',
         headers: {
@@ -37,7 +38,9 @@
         },
         body: JSON.stringify(data)
       };
-      fetch('/api', options);
+      var response = await fetch('/api', options);
+      var json = await response;
+      console.log(json);
     }
 
     //document.location.href = "PlayerPage.html";
