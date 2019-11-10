@@ -9,6 +9,27 @@
     <link rel="stylesheet" href="/style.css">
   </head>
 
+
   <h1 id="para1"></h1>
+
+  <script>
+
+    var x = "test";
+    const data = { x };
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    };
+    const response = fetch('/api', options).then(response =>
+        console.log(response));
+
+    //console.log(json);
+    document.getElementById("para1").innerHTML = JSON.parse(json).para1;
+
+  </script>
+
 
 </html>
