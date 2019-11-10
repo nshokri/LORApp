@@ -25,12 +25,12 @@
 
   <script>
     var form = document.getElementById("search");
+
     form.onsubmit = async function(e) {
       e.preventDefault();
-      console.log(document.getElementById("textbox").value);
 
-      var x = document.getElementById("textbox").value;
-      const data = { x };
+      var name = document.getElementById("textbox").value;
+      const data = { name };
       const options = {
         method: 'POST',
         headers: {
