@@ -12,11 +12,14 @@ app.get("/summoner/:id", (request, response) => {
   console.log(request.params.id);
   user = request.params.id;
 
-  //Create summoner site before send
-  summoner.getElementById("Head").innerHTML = "TESTING";
-
   response.sendFile(path.join(__dirname + "/summoner.html"));
-  /*response.json({
+  response.json();
+});
+
+app.post("/loadInfo", (request, response) => {
+
+  response.json({
+    para1: user,
     status: "success"
-  });*/
+  });
 });
