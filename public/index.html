@@ -16,7 +16,7 @@
   <body>
     <section>
       <h1><b>LOR.gg<b></h1>
-      <form class="search" onsubmit="sendInfo()">
+      <form class="search" id="search">
         <input type="text" name="search" id="textbox" size="40px" placeholder="Name">
         <button type="submit"><img src=search-icon.png style="width:71px" style="height:71px"></img></button>
       </form>
@@ -24,9 +24,11 @@
   </body>
 
   <script>
-    function sendInfo()
-    {
+    var form = document.getElementById("search");
+    form.onsubmit = function(e) {
+      e.preventDefault();
       console.log(document.getElementById("textbox").value);
+
       const data = document.getElementById("textbox").value;
       const options = {
         method: 'GET',
@@ -37,6 +39,8 @@
       };
       fetch('/api', options);
     }
+
+    //document.location.href = "test.html";
   </script>
 
 </html>
