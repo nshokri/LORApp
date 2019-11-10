@@ -29,8 +29,8 @@
     form.onsubmit = function(e) {
       e.preventDefault();
 
-      /*var name = document.getElementById("textbox").value;
-      const data = { name };
+      var name = document.getElementById("textbox").value;
+      /*const data = { name };
       const options = {
         method: 'GET',
         headers: {
@@ -43,7 +43,7 @@
       console.log(json);
       */
 
-      document.location.href = "summoner.html";
+      document.location.href = "summoner/" + name;
 
     }
   </script>
