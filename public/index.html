@@ -26,24 +26,25 @@
   <script>
     var form = document.getElementById("search");
 
-    form.onsubmit = async function(e) {
+    form.onsubmit = function(e) {
       e.preventDefault();
 
       var name = document.getElementById("textbox").value;
       const data = { name };
       const options = {
-        method: 'POST',
+        method: 'GET',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
       };
-      var response = await fetch('/api', options);
-      var json = await response;
+      var response = fetch('/api', options);
+      var json = response;
       console.log(json);
-    }
 
-    //document.location.href = "PlayerPage.html";
+      document.location.href = "PlayerPage.html";
+
+    }
   </script>
 
 </html>
