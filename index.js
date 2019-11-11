@@ -9,15 +9,16 @@ app.use(express.static("public"));
 app.use(express.json());
 //{ limit: "1mb" }
 
-app.get("/summoner/:id", (request, response) => {
+app.get("/summoner/name=:id", (request, response) => {
   console.log(request.params.id);
   user = request.params.id;
 
   response.sendFile(path.join(__dirname + "/summoner.html"));
+
 });
 
 app.post("/loadPage", (request, response) => {
-
+  console.log("Name is: " + request.body);
   response.json({
     status: "success",
     playerName: "",

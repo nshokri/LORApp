@@ -79,13 +79,17 @@
 
     async function loadPage()
     {
-    //  const dataSend = { };
-      const options = {
+        //Find the name from URL
+        const URL = window.location.href
+        const name = URL.substring(URL.indexOf("=") + 1);
+
+        const dataSend = { name };
+        const options = {
         method: 'POST',
-        //headers: {
-      //    'Content-Type': 'application/json'
-      //  },
-        //body: JSON.stringify(dataSend)
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(dataSend)
       };
       const response = await fetch('/loadPage', options);
       const data = await response.json();
