@@ -20,6 +20,7 @@ app.post("/loadPage", (request, response) => {
 
   response.json({
     status: "success",
+    playerName: "",
     wins: "999 wins",
     losses: "-999 losses"
   });
