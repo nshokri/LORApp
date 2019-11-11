@@ -18,7 +18,7 @@
       <h1><b>LOR.gg<b></h1>
       <form class="search" id="search">
         <input type="text" name="search" id="textbox" size="40px" placeholder="Name">
-        <button type="submit"><img src=search-icon.png style="width:71px" style="height:71px"></img></button>
+        <button type="submit"><img src="search-icon.png" style="width:71px" style="height:71px"></img></button>
       </form>
     </section>
   </body>
@@ -26,7 +26,8 @@
   <script>
     var form = document.getElementById("search");
 
-    form.onsubmit = function(e) {
+    form.onsubmit = function(e)
+    {
       e.preventDefault();
 
       var name = document.getElementById("textbox").value;

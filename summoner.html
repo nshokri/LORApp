@@ -6,13 +6,72 @@
     <meta name="description" content="ABCDS">
     <meta name="keywords" content="Test">
     <meta name="author" content="NeckBeardNack">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/style2.css">
   </head>
 
+<body>
+  <a href="/index.html" style="text-decoration: none;" style="outline: none;">LOR.gg</a>
+  <section>
+    <form class="search" id="search">
+      <input type="text" name="search" id="textbox" size="60px" placeholder="Name">
+      <button type="submit"><img src="/search-icon.png" style="width:71px" style="height:71px"></img></button>
+    </form>
+  </section>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-12 well" style="background-color:rgb(73, 71, 71);">
+        <div class="well">
+          <h2 id="playerName"><b>Zeki Ye</b></h2>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" id="wins" role="progressbar" style="width:50%">
+            0 Wins
+          </div>
+          <div class="progress-bar progress-bar-danger" id="loses" role="progressbar" style="width:50%">
+            0 Loses
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 well" style="background-color:rgb(73, 71, 71);">
+          <h1>
+            Most Used Cards
+          </h1>
+          <div class="well">
+              <ul id="freqCards">
 
-  <h1 id="para1"></h1>
+              </ul>
+          </div>
+        </div>
+        <div class="col-lg-8 well" style="background-color: rgb(73, 71, 71);">
+          <h1>
+            Match History
+          </h1>
+          <div class="well" id="matchHistory">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="container-fluid text-center">
+    <p>Copyright 2019, jk idk what that even is KEKW</p>
+  </footer>
+</body>
+
 
   <script>
+    var form = document.getElementById("search");
+
+    form.submit = function(e)
+    {
+      e.preventDefault();
+      var name = document.getElementById("textbox").value;
+      document.location.href = "name";
+    }
 
     async function loadPage()
     {
@@ -26,8 +85,6 @@
       };
       const response = await fetch('/loadPage', options);
       const json = await response.json();
-
-      document.getElementById("para1").innerHTML = json.para1;
     }
 
     //function calls

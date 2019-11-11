@@ -1,0 +1,60 @@
+a {
+  position: relative;
+  left: 2.5%;
+  top: 2.5%;
+  text-decoration: none;
+  font: 300% "Script MT Bold", Helvetica, sans-serif;
+  color: rgba(212, 150, 5, 0.918);
+}
+
+a:hover {
+  color: rgba(255, 201, 74, 0.918);
+}
+
+
+footer {
+  position: relative;
+  width: 100%;  
+  bottom: 0px;
+  background-color: #555;
+  color: white;
+  padding: 20px;
+}
+
+body {
+  background: rgb(37, 36, 36);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font: 200% "Script MT Bold", Helvetica, sans-serif;
+  color: rgba(212, 150, 5, 0.918);
+  text-decoration: underline;
+}
+
+section {
+  text-align: center;
+  margin: 2.5% 0% 1% 0%;
+}
+
+form.search input[type=text] {
+  height: 80px;
+  font: 25px Helvetica, Arial;
+  font-size: 25px;
+  padding: 0px 10px 0px 10px;
+  border: none;
+}
+
+form.search button {
+  font-size: 30px;
+  background-color: rgba(212, 150, 5, 0.918);
+  margin: 0px 5px 0px 5px;
+  border: none;
+  transition: all 0.1s linear;
+}
+
+
+form.search button:hover {
+  background-color: rgba(243, 182, 39, 0.918);
+}
